@@ -1,0 +1,301 @@
+header {
+    width: 100%;
+    height: auto;
+    background-color: #181820;
+    position: relative;
+    z-index: 1
+}
+
+h1,
+h2 {
+    font-family: 'Hanna', fantasy;
+}
+
+.is_box {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.gnb {
+    width: 100%;
+    height: 50px;
+    color: #7f7f7f;
+}
+
+.gnb::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.lf {
+    width: 30%;
+    float: left;
+}
+
+.lf h1 {
+    font-size: 36px;
+}
+
+.lf h1 a {
+    color: #df871d;
+}
+
+.search p {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.search p input {
+    float: left;
+    height: 30px;
+    width: 85%;
+    text-indent: 10px;
+    letter-spacing: 0px;
+}
+
+.search p input::placeholder {
+    color: #1b1b1b;
+    letter-spacing: -1.5px;
+}
+
+.search p button {
+    float: right;
+    height: 30px;
+    width: 13%;
+    margin-left: 2%;
+    background: url(../img/search.png) no-repeat center;
+    background-size: contain;
+}
+
+.search p::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.rt {
+    float: right;
+}
+
+.my_menu {
+    width: 29%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.my_menu::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.my_menu li {
+    float: left;
+    width: auto;
+    margin: 0 25px;
+    text-align: center;
+    position: relative;
+}
+
+.my_menu li::after {
+    content: "|";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -25px;
+}
+
+.my_menu li:last-child::after {
+    display: none;
+}
+
+.my_menu li a {
+    width: 100%;
+    display: block;
+}
+
+.lab {
+    font-family: 'Hanna', fantasy;
+    height: 100px;
+    line-height: 100px;
+}
+
+.lab::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.lab h1 {
+    color: #fff;
+    text-align: left;
+}
+
+.lab .ham_btn {
+    display: none;
+}
+
+.lab .menu {
+    width: 51.5%;
+    position: relative;
+}
+
+.lab .menu::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.lab .menu .mobile {
+    display: none;
+}
+
+.lab .menu > ul > li {
+    float: left;
+    margin: 0 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.lab .menu li a {
+    color: #df871d;
+    display: block;
+}
+
+.lab .menu li a:hover {
+    color: #fdc029;
+}
+
+.lab .menu:hover .sub_menu {
+    display: block;
+}
+
+.lab .menu .sub_menu {
+    width: 100%;
+    height: 245px;
+    position: absolute;
+    top: 100px;
+    background-color: #181820;
+    border-bottom: 5px solid #fff;
+    display: none;
+}
+
+.lab .menu .sub_menu ul {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.lab .menu .sub_menu ul li {
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #181820;
+}
+
+@media screen and (min-width:320px) and (max-width:640px) {
+    .is_box {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .lab {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .lf {
+        width: 40%;
+        float: left;
+    }
+
+    .lf h1 {
+        font-size: 28px;
+        line-height: 1;
+        margin: 20px 10px
+    }
+
+    .lab {
+        position: relative;
+    }
+
+    .lab .ham_btn {
+        width: 30px;
+        height: 30px;
+        float: right;
+        display: block;
+        margin: 5px 10px;
+    }
+
+    .lab .ham_btn img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .lab .menu {
+        display: none;
+        width: 100%;
+        height: 85vh;
+        background-color: #181820;
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+
+    .lab .menu ul {
+        height: 100%;
+    }
+
+    .lab .menu ul li {
+        margin: 0 auto;
+        width: 100%;
+        float: none;
+    }
+
+    .lab .menu .mobile {
+        display: block;
+    }
+
+    .lab .menu ul li.mobile ul {
+        overflow: hidden;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .lab .menu ul li.mobile ul li {
+        float: left;
+        width: 50%;
+        color: #f3f3f3;
+    }
+
+    .lab .menu ul li.mobile ul li::after {
+        content: "|";
+        display: inline-block;
+        position: relative;
+        left: 70px;
+    }
+
+    .lab .menu ul li.mobile ul li:last-childe::after {
+        display: none;
+    }
+
+    .lab .menu:hover .sub_menu {
+        display: none;
+    }
+
+}

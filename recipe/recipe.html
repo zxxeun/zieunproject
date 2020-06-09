@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/hf.css">
+    <link rel="stylesheet" href="css/recipe.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <title>레시피 노트 :: 내가 만들어가는 레시피</title>
+</head>
+
+<body>
+    <header>
+        <div class="is_box">
+            <nav class="gnb">
+                <div class="search lf">
+                    <p><input type="text" placeholder="검색어를 입력해주세요."><button type="submit"></button></p>
+                </div>
+                <ul class="my_menu rt">
+                    <li><a>로그인</a></li>
+                    <li><a>회원가입</a></li>
+                    <li><a>레시피등록하기</a></li>
+                </ul>
+            </nav>
+            <nav class="lab">
+                <div class="logo lf">
+                    <h1><a href="index.html">REC!PE NOTE</a></h1>
+                </div>
+                <p class="ham_btn">
+                    <img src="img/hamburger.png">
+                </p>
+                <div class="menu rt">
+                    <ul>
+                        <li class="mobile">
+                            <ul>
+                                <li>로그인</li>
+                                <li>회원가입</li>
+                            </ul>
+                        </li>
+                        <li><a href="recipe.html">레시피노트</a></li>
+                        <li><a href="#" onclick="alret('준비중입니다')">이달의선택</a></li>
+                        <!--                        <li><a href="#">이달의재료</a></li>-->
+                        <li><a href="#" onclick="alret('준비중입니다')">나도셰프다</a></li>
+                        <li><a href="#" onclick="alret('준비중입니다')">이벤트</a></li>
+                    </ul>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#" onclick="alret('준비중입니다')">방법별</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">상황별</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">재료별</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">종류별</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#" onclick="alret('준비중입니다')">이달의메뉴</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">이달의재료</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">이달의셰프</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">레노's PICK</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#" onclick="alret('준비중입니다')">나도셰프다</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">맛집리뷰어</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#" onclick="alret('준비중입니다')">이벤트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h2>레시피노트</h2>
+        <div class="sub_menu">
+            <div class="depth_2">
+                <p>방법별</p>
+                <p>상황별</p>
+                <p>재료별</p>
+                <p>종류별</p>
+            </div>
+            <div class="depth_3">
+                <ul>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                    <li><a href="#">가가가</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="content_1">
+        <h3>오늘의 BEST<span>좋아요 수로 반영되는 BEST레시피</span></h3>
+        <div class="best">
+            <ul>
+                <li>
+                    <div class="thumb" style="background-image:url(img/014.jpg)">
+                        <span class="grade grade_1">1위</span>
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>40 min</span></li>
+                            <li class="like"><span>9999 +</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb" style="background-image:url(img/noodles.jpg)">
+                        <span class="grade grade_2">2위</span>
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>20 min</span></li>
+                            <li class="like"><span>999 +</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb" style="background-image:url(img/010.jpg)">
+                        <span class="grade grade_3">3위</span>
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>30 min</span></li>
+                            <li class="like"><span>99 +</span></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="content_2">
+        <h3>오늘의 노트<span>실시간 업로드되는 레시피</span></h3>
+        <div class="best">
+            <ul>
+                <li>
+                    <div class="thumb">
+                        <img src="img/014.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>40 min</span></li>
+                            <li class="like"><span>564</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/noodles.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>20 min</span></li>
+                            <li class="like"><span>28</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/010.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>30 min</span></li>
+                            <li class="like"><span>65</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/014.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>40 min</span></li>
+                            <li class="like"><span>51</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/014.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>40 min</span></li>
+                            <li class="like"><span>47</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/noodles.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>20 min</span></li>
+                            <li class="like"><span>24</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/010.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>30 min</span></li>
+                            <li class="like"><span>56</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/014.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>40 min</span></li>
+                            <li class="like"><span>85</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/014.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>40 min</span></li>
+                            <li class="like"><span>55</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/noodles.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>20 min</span></li>
+                            <li class="like"><span>211</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/010.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>30 min</span></li>
+                            <li class="like"><span>144</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/014.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>40 min</span></li>
+                            <li class="like"><span>522</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/014.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>40 min</span></li>
+                            <li class="like"><span>754</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="img/noodles.jpg">
+                    </div>
+                    <div class="intro">
+                        <p>작성자</p>
+                        <p>글 소개</p>
+                    </div>
+                    <div class="infor">
+                        <ul>
+                            <li class="time"><span>20 min</span></li>
+                            <li class="like"><span>20</span></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="js/hamberger.js"></script>
+</body></html>

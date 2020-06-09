@@ -1,0 +1,552 @@
+.banner {
+    width: 100%;
+}
+
+#videoBg {
+    margin-top: -350px;
+}
+
+section.content_1 {
+    margin: 50px auto 0;
+    height: 1050px;
+    max-width: 1200px;
+    width: 65%;
+}
+
+section.content_1::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+section h2 {
+    width: 100%;
+    padding: 10px 0 20px;
+}
+
+section h2::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 22px;
+    background-color: #df871d;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+
+section.content_1 .lfb {
+    width: 916px;
+    margin-right: 12px;
+    float: left;
+    /*    height: 100%;*/
+    overflow: hidden;
+    /*    border: 1px solid red;*/
+
+}
+
+section.content_1 .lfb > div > ul {
+    width: 95%;
+    height: 400px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+section.content_1 .lfb ul::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+section.content_1 .lfb > div > ul > li {
+    float: left;
+    height: 400px;
+    width: 31.8%;
+    margin-right: 20px;
+    /*    border: 1px solid #eee;*/
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+}
+
+section.content_1 .lfb > div > ul > li:nth-child(3) {
+    margin-right: 0;
+}
+
+section.content_1 .lfb ul .thumb {
+    width: 262px;
+    height: 262px;
+    margin: 10px auto;
+    border: 1px solid #eee;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section.content_1 .lfb ul .thumb span.grade {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.thumb span.grade_1 {
+    background: #fdc029
+}
+
+.thumb span.grade_2 {
+    background: #bdb6ae
+}
+
+.thumb span.grade_3 {
+    background: #bdb6ae
+}
+
+section.content_1 .lfb ul .intro {
+    width: 262px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+section.content_1 .lfb ul .infor {
+    width: 262px;
+    margin: 10px auto;
+    height: 50px;
+}
+
+section.content_1 .lfb ul .infor ul {
+    height: 50px;
+}
+
+section.content_1 .lfb ul .infor li {
+    float: left;
+    width: 50%;
+}
+
+section.content_1 .lfb ul .infor li {
+    height: 50px;
+    display: inline-block;
+    padding-left: 40px;
+    line-height: 50px;
+}
+
+section.content_1 .lfb ul .infor li.like {
+    background: url(../img/heart.png) no-repeat;
+    background-size: 30px;
+    background-position: center left;
+}
+
+section.content_1 .lfb ul .infor li.time {
+    background: url(../img/clock.png) no-repeat;
+    background-size: 30px;
+    background-position: center left;
+}
+
+section.content_1 .lfb .best {
+    margin-bottom: 29px;
+    padding-bottom: 59px;
+    height: 430px;
+    /*    border-bottom: 1px solid #ddd;*/
+}
+
+section.content_1 .lfb .chef {
+    padding-bottom: 59px;
+    height: 430px
+}
+
+section.content_1 .lfb .swiper-container > ul {
+    width: 100%;
+    height: 430px;
+    font-size: 14px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section.content_1 .lfb .swiper-container > ul > li {
+    float: left;
+    height: 400px;
+    width: 31.8%!important;
+/*    margin: 20px;*/
+/*    box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);*/
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}
+
+.swiper-container {
+    width: 100%;
+/*    border: 1px solid red;*/
+}
+
+.swiper-slide {
+    text-align:center;	
+	align-items:center; /* 위아래 기준 중앙정렬 */
+	justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+
+.swiper-container {
+    width: 100%;   
+}
+
+.swiper-container a {
+    font-size: 30px;
+    color: inherit;
+}
+
+section.content_1 .rtb {
+    width: 272px;
+    float: left;
+    height: 1000px;
+    overflow: hidden;
+    /*    border: 1px solid red;*/
+}
+
+section.content_1 .rtb ul li {
+    height: 100px;
+    margin-bottom: 16.9px;
+    border: 1px solid #ccc;
+}
+
+
+section.content_2 {
+    margin: 50px auto;
+    height: 100px;
+    max-width: 1200px;
+    width: 65%;
+    background: url(../img/006.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.content_3 {
+    margin: 50px auto;
+    max-width: 1200px;
+    width: 65%;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+section.content_3 .img_box {
+    width: 450px;
+    height: 500px;
+    float: left;
+    background: #ccc;
+}
+
+section.content_3 .img_box img {
+    width: 100%;
+}
+
+section.content_3 .input_box {
+    width: 750px;
+    height: 500px;
+    float: left;
+}
+
+section.content_3 .input_box form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.content_3 .input_box .select {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+section.content_3 .input_box .select::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+section.content_3 .input_box .select p {
+    width: 200px;
+    float: left;
+}
+
+.select select {
+    width: 150px;
+    height: 30px;
+    background: url(../img/select_down.png) no-repeat;
+    background-position: center right;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-indent: 10px;
+}
+
+section.content_3 .input_box p {
+    height: 50px;
+    line-height: 50px;
+    /*    border: 1px solid red;*/
+}
+
+section.content_3 .input_box p:nth-child(4) {
+    height: 30px;
+    line-height: 30px;
+
+}
+
+section.content_3 .input_box input {
+    text-indent: 20px;
+    width: 350px;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+section.content_3 .input_box textarea {
+    resize: none;
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+section.content_3 .input_box button {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: #df871d;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:640px) {   
+    #videoBg {
+        width:100%;
+        margin-top: 0px;
+    }
+
+    section.content_1 {
+        margin: 20px auto;
+        height: auto;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    section.content_1::after {
+        content: "";
+        display: none;
+        clear: both;
+    }
+
+    section.content_1 .lfb {
+        width: 100%;
+        margin-right: 0px;
+        float: none;
+        position: relative;
+    }
+
+    section.content_1 .lfb h2 {
+        margin-top: 10px;
+    }
+
+    section.content_1 .lfb > div {
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    section.content_1 .lfb > div > ul {
+        width: 656px;
+        margin: 0 auto;
+    }
+
+    section.content_1 .lfb ul::after {
+        content: "";
+        display: none;
+        clear: both;
+    }
+
+    section.content_1 .lfb > div > ul > li {
+        /*        float: left;*/
+        width: 212px;
+        height: 320px;
+        background: #fff;
+        margin-right: 10px;
+        border: 1px solid #eee;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0);
+    }
+
+    section.content_1 .lfb > div > ul > li:last-child {
+        margin-right: 0;
+    }
+
+    section.content_1 .lfb ul .thumb {
+        width: 95%;
+        max-width: 202px;
+        height: 202px;
+        margin: 10px auto;
+        border: 1px solid #eee;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    section.content_1 .lfb ul .thumb span.grade {
+        position: absolute;
+        top: 10px;
+        left: -4px;
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        display: inline-block;
+    }
+
+    section.content_1 .lfb ul .intro {
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        margin: 5px 0;
+    }
+
+    section.content_1 .lfb ul .infor {
+        width: 100%;
+        margin: 5px auto;
+        height: 40px;
+    }
+
+    section.content_1 .lfb ul .infor ul {
+        height: 40px;
+    }
+
+    section.content_1 .lfb ul .infor li {
+        float: left;
+        width: 50%;
+    }
+
+    section.content_1 .lfb ul .infor li {
+        height: 40px;
+        display: inline-block;
+        padding-left: 40px;
+        line-height: 40px;
+    }
+
+    section.content_1 .lfb .best {
+        height: 340px;
+    }
+
+    /*
+    section.content_1 .best:after {
+        content: "";
+        display: inline-block;
+        height: 482px;
+        width: 80px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url(../img/blur_bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 100% 100%;
+    }
+*/
+
+    section.content_1 .lfb .chef {
+        height: 340px;
+    }
+
+    section.content_1 .rtb {
+        width: 100%;
+        float: none;
+        height: auto;
+        overflow: hidden;
+        /*    border: 1px solid red;*/
+    }
+
+    section.content_1 .rtb ul li {
+        width: 48%;
+        margin-right: 2%;
+        float: left;
+    }
+
+    section.content_1 .rtb ul li:last-child {
+        margin-right: 0;
+    }
+
+    section.content_2 {
+        width: 100%;
+    }
+
+    section.content_3 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    section.content_3 .img_box {
+        display: none;
+    }
+
+    section.content_3 .img_box img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.content_3 .input_box {
+        width: 100%;
+        ;
+        height: 500px;
+        float: left;
+    }
+
+    section.content_3 .input_box form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section.content_3 .input_box .select {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    section.content_3 .input_box .select::after {
+        content: "";
+        display: inline-block;
+        clear: both;
+    }
+
+    section.content_3 .input_box .select p {
+        width: 200px;
+        float: left;
+    }
+
+    .select select {
+        width: 100%;
+    }
+
+    section.content_3 .input_box p {
+        height: 50px;
+        line-height: 50px;
+        /*    border: 1px solid red;*/
+    }
+
+    section.content_3 .input_box p:nth-child(4) {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    section.content_3 .input_box input {
+        width: 100%;
+    }
+
+    section.content_3 .input_box textarea {
+        width: 100%;
+    }
+
+
+}

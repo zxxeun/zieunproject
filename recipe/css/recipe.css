@@ -1,0 +1,329 @@
+section {
+    width: 65%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto 50px;
+}
+
+section h2 {
+    margin: 100px auto 30px;
+    font-size: 32px;
+    color: #aa3d02;
+}
+
+section .sub_menu {
+    width: 98%;
+    height: 200px;
+    margin: 0 auto 50px;
+}
+
+section .sub_menu > div {
+    float: left;
+}
+
+section .sub_menu::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+section .sub_menu .depth_2 {
+    width: 15%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fdc029;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+section .sub_menu .depth_3 {
+    width: 85%;
+    height: 100%;
+    line-height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+section .sub_menu .depth_3 > ul {
+    width: 100%;
+}
+
+section .sub_menu .depth_3 > ul::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+section .sub_menu .depth_3 > ul > li {
+    width: 25%;
+    float: left;
+}
+
+section h3 {
+    color: #fdc029;
+    margin-bottom: 30px;
+}
+
+section h3 span {
+    font-size: 14px;
+    color: #1b1b1b;
+    font-weight: 100;
+    position: relative;
+    top: -1px;
+}
+
+section h3 span:before {
+    content: "|";
+    margin: 0 15px;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+}
+
+section.content_1 .lfb {
+    width: 916px;
+    margin-right: 12px;
+    float: left;
+    /*    height: 100%;*/
+    overflow: hidden;
+    /*    border: 1px solid red;*/
+}
+
+section.content_1 > div > ul {
+    width: 95%;
+    height: 500px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+section.content_1 ul::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+section.content_1 > div > ul > li {
+    float: left;
+    height: 480px;
+    width: 31.8%;
+    margin-right: 20px;
+    /*    border: 1px solid #eee;*/
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+}
+
+section.content_1 > div > ul > li:last-child {
+    margin-right: 0;
+}
+
+section.content_1 ul .thumb {
+    width: 342px;
+    height: 342px;
+    margin: 10px auto;
+    border: 1px solid #eee;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section.content_1 ul .thumb span.grade {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    width: 60px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.thumb span.grade_1 {
+    background: #fdc029
+}
+
+.thumb span.grade_2 {
+    background: #bdb6ae
+}
+
+.thumb span.grade_3 {
+    background: #bdb6ae
+}
+
+section.content_1 ul .intro {
+    width: 100%;
+    padding: 0 20px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+section.content_1 ul .infor {
+    width: 100%;
+    padding: 0 20px;
+    height: 50px;
+    margin: 10px auto;    
+}
+
+section.content_1 ul .infor ul {
+    height: 50px;
+}
+
+section.content_1 ul .infor li {
+    float: left;
+    width: 50%;
+}
+
+section.content_1 ul .infor li {
+    height: 50px;
+    display: inline-block;
+    padding-left: 40px;
+    line-height: 50px;
+}
+
+section.content_1 ul .infor li.like {
+    background: url(../img/heart.png) no-repeat;
+    background-size: 30px;
+    background-position: center left;
+}
+
+section.content_1 ul .infor li.time {
+    background: url(../img/clock.png) no-repeat;
+    background-size: 30px;
+    background-position: center left;
+}
+
+section.content_2 h3 span {
+    font-size: 14px;
+    color: #181820;
+    position: relative;
+    top: -1px;
+}
+
+section.content_2 h3 span::before {
+    content: "|";
+    display: inline-block;
+    margin: 0 10px;
+}
+
+section.content_2 .lfb {
+    width: 916px;
+    margin-right: 12px;
+    float: left;
+    /*    height: 100%;*/
+    overflow: hidden;
+    /*    border: 1px solid red;*/
+}
+
+section.content_2 > div > ul {
+    width: 95%;
+    height: 400px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+section.content_2 ul::after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+section.content_2 > div > ul > li {
+    float: left;
+    height: 380px;
+    width: 23.6%;
+    margin-right: 20px;
+    /*    border: 1px solid #eee;*/
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+}
+
+section.content_2 > div > ul > li:nth-child(4n) {
+    margin-right: 0;
+}
+
+section.content_2 ul .thumb {
+    width: 242px;
+    height: 242px;
+    margin: 10px auto;
+    border: 1px solid #eee;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+section.content_2 ul .thumb:hover {
+    background-size: 120%;        
+}
+
+section.content_2 ul .thumb img {
+    width: 100%;
+}
+
+section.content_2 ul .thumb:hover img {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+section.content_2 ul .thumb span.grade {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    width: 60px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+section.content_2 ul .intro {
+    width: 100%;
+    padding: 0 20px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+section.content_2 ul .infor {
+    width: 100%;
+    padding: 0 20px;
+    height: 50px;
+    margin: 10px auto;    
+}
+
+section.content_2 ul .infor ul {
+    height: 50px;
+}
+
+section.content_2 ul .infor li {
+    float: left;
+    width: 50%;
+}
+
+section.content_2 ul .infor li {
+    height: 50px;
+    display: inline-block;
+    padding-left: 40px;
+    line-height: 50px;
+}
+
+section.content_2 ul .infor li.like {
+    background: url(../img/heart.png) no-repeat;
+    background-size: 30px;
+    background-position: center left;
+}
+
+section.content_2 ul .infor li.time {
+    background: url(../img/clock.png) no-repeat;
+    background-size: 30px;
+    background-position: center left;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/hf.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <title>레시피 노트 :: 내가 만들어가는 레시피</title>
+</head>
+
+<body>
+    <header>
+        <div class="is_box">
+            <nav class="gnb">
+                <div class="search lf">
+                    <p><input type="text" placeholder="검색어를 입력해주세요."><button type="submit"></button></p>
+                </div>
+                <ul class="my_menu rt">
+                    <li><a>로그인</a></li>
+                    <li><a>회원가입</a></li>
+                    <li><a>레시피등록하기</a></li>
+                </ul>
+            </nav>
+            <nav class="lab">
+                <div class="logo lf">
+                    <h1><a href="index.html">REC!PE NOTE</a></h1>
+                </div>
+                <p class="ham_btn">
+                    <img src="img/hamburger.png">
+                </p>
+                <div class="menu rt">
+                    <ul>
+                        <li class="mobile">
+                            <ul>
+                                <li>로그인</li>
+                                <li>회원가입</li>
+                            </ul>
+                        </li>
+                        <li><a href="recipe.html">레시피노트</a></li>
+                        <li><a href="#" onclick="alret('준비중입니다')">이달의선택</a></li>
+                        <!--                        <li><a href="#">이달의재료</a></li>-->
+                        <li><a href="#" onclick="alret('준비중입니다')">나도셰프다</a></li>
+                        <li><a href="#" onclick="alret('준비중입니다')">이벤트</a></li>
+                    </ul>
+                    <div class="sub_menu" onclick="alret('준비중입니다')">
+                        <ul>
+                            <li><a href="#" onclick="alret('준비중입니다')">방법별</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">상황별</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">재료별</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">종류별</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#" onclick="alret('준비중입니다')">이달의메뉴</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">이달의재료</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">이달의셰프</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">레노's PICK</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#" onclick="alret('준비중입니다')">나도셰프다</a></li>
+                            <li><a href="#" onclick="alret('준비중입니다')">맛집리뷰어</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#" onclick="alret('준비중입니다')">이벤트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+        <div>
+            <video autoplay loop poster="img/banner_vod_img.png" id="videoBg" muted>
+                <source src="img/banner_vod_1_3.mp4" type="video/mp4">
+                <!--                <source src="img/banner_vod_1_3.webm" type="video/webm">-->
+            </video>
+        </div>
+
+    </section>
+    <section class="content_1">
+        <div class="lfb">
+            <h2>BEST 레시피</h2>
+            <div class="best">
+                <ul>
+                    <li>
+                        <div class="thumb" style="background-image:url(img/012.jpg)">
+                            <span class="grade grade_1">1위</span>
+                        </div>
+                        <div class="intro">
+                            <p>작성자</p>
+                            <p>글 소개</p>
+                        </div>
+                        <div class="infor">
+                            <ul>
+                                <li class="time"><span>30 min</span></li>
+                                <li class="like"><span>9999 +</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb" style="background-image:url(img/00701.jpg)">
+                            <span class="grade grade_2">2위</span>
+                        </div>
+                        <div class="intro">
+                            <p>작성자</p>
+                            <p>글 소개</p>
+                        </div>
+                        <div class="infor">
+                            <ul>
+                                <li class="time"><span>15 min</span></li>
+                                <li class="like"><span>9999 +</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumb" style="background-image:url(img/butter.jpg)">
+                            <span class="grade grade_3">3위</span>
+                        </div>
+                        <div class="intro">
+                            <p>작성자</p>
+                            <p>글 소개</p>
+                        </div>
+                        <div class="infor">
+                            <ul>
+                                <li class="time"><span>45 min</span></li>
+                                <li class="like"><span>9999 +</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>나도 셰프다</h2>
+            <div class="chef">
+                    <ul>
+                        <li>
+                            <div class="thumb" style="background-image:url(img/014.jpg)"></div>
+                            <div class="intro">
+                                <p>작성자</p>
+                                <p>글 소개</p>
+                            </div>
+                            <div class="infor">
+                                <ul>
+                                    <li class="time"><span>40 min</span></li>
+                                    <li class="like"><span>9999 +</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb" style="background-image:url(img/noodles.jpg)"></div>
+                            <div class="intro">
+                                <p>작성자</p>
+                                <p>글 소개</p>
+                            </div>
+                            <div class="infor">
+                                <ul>
+                                    <li class="time"><span>20 min</span></li>
+                                    <li class="like"><span>9999 +</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb" style="background-image:url(img/010.jpg)"></div>
+                            <div class="intro">
+                                <p>작성자</p>
+                                <p>글 소개</p>
+                            </div>
+                            <div class="infor">
+                                <ul>
+                                    <li class="time"><span>30 min</span></li>
+                                    <li class="like"><span>9999 +</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div class="rtb">
+            <h2>주목할만한</h2>
+            <ul>
+                <li><a href="#">광고 1</a></li>
+                <li><a href="#">광고 2</a></li>
+                <li><a href="#">광고 3</a></li>
+                <li><a href="#">광고 4</a></li>
+                <li><a href="#">광고 5</a></li>
+                <li><a href="#">광고 6</a></li>
+                <li><a href="#">광고 7</a></li>
+                <li><a href="#">광고 8</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="content_2">
+
+    </section>
+    <section class="content_3">
+        <h2>제휴광고 &nbsp;| &nbsp;Q & A</h2>
+        <div class="img_box">
+            <img src="img/cutlery.jpg">
+        </div>
+        <div class="input_box">
+            <form action="MAILTO:yojeeeun@gmail.com" method="post" enctype="text/plain">
+                <div class="select">
+                    <select>
+                        <option selected>분류</option>
+                        <option>광고문의</option>
+                        <option>제휴문의</option>
+                        <option>건의</option>
+                        <option>질문</option>
+                    </select>
+                </div>
+                <p><input type="email" placeholder="답변받으실 이메일 주소를 입력해주세요."></p>
+                <p><input type="text" placeholder="연락받으실 전화번호를 입력해주세요."></p>
+                <p><small>＊ 이메일, 연락처 중 하나는 필수로 입력해주시길 바랍니다.</small></p>
+                <textarea placeholder="이곳에 내용을 입력해주세요."></textarea>
+                <p><button type="submit">문의하기</button></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+    </footer>
+
+    <script src="js/hamberger.js"></script>
+    <script src="js/swiper.min.js"></script>
+</body></html>
