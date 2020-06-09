@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap&subset=korean');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1b1b1b;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.intro .content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@keyframes down {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section .content .down {
+    width: 150px;
+    text-align: center;
+    color: #f5f5f5;
+    cursor: pointer;
+    margin: 130px auto 0;
+    font-size: 16px;
+    animation-name: down;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+}
+
+.down a {
+    color: #f9f9f9;
+}
+
+
+.section .content .down img {
+    width: 40px;
+}
+
+.section .content h1 {
+    font-size: 58px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.portfolio {
+    border-bottom: 1px solid #eee;
+}
+
+.portfolio::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.portfolio .badge {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-35%);
+}
+
+.portfolio .rwd-badge {
+    background-color: #89aae6;
+
+}
+
+.portfolio .mobile-badge {
+    background-color: #ac80a0;
+}
+
+.portfolio .pc-badge {
+    background-color: #0471a6;
+}
+
+.portfolio > div {
+    float: left;
+    height: 100%;
+    color: #404040
+}
+
+.portfolio .left {
+    width: 40%;
+    background-image: url(../image/back2.png);
+    letter-spacing: -1px;
+}
+
+.portfolio .left .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 80px;
+}
+
+.portfolio .left .content h2 {
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.portfolio .left .content p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.portfolio .left .content p {
+    line-height: 2;
+    font-size: 15px;
+}
+
+.portfolio .left .content p.url-btn {
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.portfolio .left .content p a {
+    letter-spacing: -1px;
+    display: block;
+    transition: 1s all;
+    background-color: #c9d6ee;
+    color: #1b1b1b;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.portfolio .left .content p a:hover {
+    background-color: #89aae6;
+    color: #fff;
+}
+
+.portfolio .right {
+    width: 60%;
+    position: relative;
+}
+
+.portfolio .right img {
+    width: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio .right img.recipe {
+    width: 55%;
+}
+
+.profile {
+    font-size: 16px;
+}
+
+.profile .content {
+    padding: 0 100px;
+    height: 80%
+}
+
+.profile h2 {
+    text-align: center;
+    font-size: 50px;
+    width: 550px;
+    margin: 50px auto 100px;
+    border-bottom: 8px solid #ac80a0;
+}
+
+.profile .sub {
+    font-size: 25px;
+    height: 55px;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.profile .content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.profile .content .left {
+    float: left;
+    width: 60%;
+}
+
+.profile .content .left::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.profile .content .left .image {
+    float: left;
+    width: 35%;
+    /*    height: auto;*/
+}
+
+.profile .content .left .image img {
+    width: 65%;
+    border-radius: 20px;
+    display: block;
+    /*    margin: 0 auto;*/
+}
+
+.profile .content .left .introduce {
+    float: left;
+    width: 65%;
+}
+
+.profile .content .left .introduce .name {
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.txt {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.profile .content .left .education {
+    clear: both;
+}
+
+.profile .content .left .education ul {
+    display: flex;
+    width: 900px;
+    padding: 50px 0;
+}
+
+.profile .content .left .education ul li {
+    flex: 1;
+}
+
+.portfolio .right.mobile {
+    display: none;
+}
+
+.profile .content .right {
+    float: left;
+    width: 40%;
+}
+
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes graphic {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes oa {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.pt {
+    margin-top: 80px;
+}
+
+.pt .line {
+    width: 500px;
+    height: 3px;
+    margin: 5px 0 15px;
+    background: #fff
+}
+
+
+.pt .line .html {
+    display: block;
+    width: 80%;
+    height: 100%;
+    background: #1b1b1b;
+    animation-name: html;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+.pt .line .css {
+    display: block;
+    width: 80%;
+    height: 100%;
+    background: #1b1b1b;
+    animation-name: css;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.pt .line .js {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: #1b1b1b;
+    animation-name: js;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.pt .line .graphic {
+    display: block;
+    width: 90%;
+    height: 100%;
+    background: #1b1b1b;
+    animation-name: graphic;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.pt .line .oa {
+    display: block;
+    width: 85%;
+    height: 100%;
+    background: #1b1b1b;
+    animation-name: oa;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.footer {
+    height: 15%;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
+    background: #fff;
+}
+
+.footer p:first-child {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.profile.mobile .content .right {
+    display: none;
+}
+
+.profile.mobile .footer {
+    display: none;
+}
+
+.section:nth-child(7) {
+    display: none;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width: 1024px) {
+    .section .content h1 {
+        font-size: 30px;
+        color: #fff;
+        line-height: 1.5;
+    }
+
+    .portfolio > div {
+        float: none;
+    }
+
+    .portfolio .left {
+        width: 100%;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    .portfolio .left .content {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-left: 0;
+    }
+
+
+
+    .portfolio .left .content h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .portfolio .left .content p:nth-child(2) {
+        font-size: 14px;
+        letter-spacing: -1px;
+    }
+
+    .portfolio .left .content p {
+        font-size: 14px;
+    }
+
+    .portfolio .left .content p.url-btn {
+        width: 130px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 10px;
+        display: inline-block;
+    }
+
+    .portfolio .left .content p a {
+        letter-spacing: -1px;
+        display: block;
+        transition: 1s all;
+        background-color: #c9d6ee;
+        color: #1b1b1b;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .portfolio .left .content p a:hover {
+        background-color: #89aae6;
+        color: #fff;
+    }
+
+    .portfolio .right.mobile {
+        display: block;
+    }
+
+    .portfolio .right.pc {
+        display: none;
+    }
+
+    .portfolio .right {
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+
+    .profile .content {
+        padding: 0 10px;
+    }
+
+    .profile h2 {
+        font-size: 30px;
+        width: 90%;
+        margin: 50px auto 40px;
+    }
+
+    .profile .sub {
+        font-size: 20px;
+        height: 50px;
+        font-weight: 600;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
+    }
+
+    .profile .content .left {
+        float: none;
+        width: 100%;
+    }
+
+    .profile .content .left::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .profile .content .left .image {
+        float: left;
+        width: 40%;
+        /*    height: auto;*/
+    }
+
+    .profile .content .left .image img {
+        width: 95%;
+    }
+
+    .profile .content .left .introduce {
+        width: 60%;
+        height: 180px;
+        overflow-y: auto;
+    }
+
+    .profile .content .left .introduce .name {
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    .profile .content .left .education {
+        clear: both;
+    }
+
+    .profile .content .left .education ul {
+        display: flex;
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .profile .content .left .education ul li {
+        flex: 1;
+    }
+
+    .profile.pc .content .right {
+        display: none;
+    }
+
+    .profile.pc .footer {
+        display: none;
+    }
+
+
+    .profile.mobile .content .right {
+        float: left;
+        width: 100%;
+    }
+
+    .profile.mobile .content .right {
+        display: block;
+    }
+
+    .profile.mobile .footer {
+        display: block;
+    }
+
+    .section:nth-child(7) {
+        display: block;
+    }
+
+
+    .footer {
+        height: 20%;
+        font-size: 12px;
+    }
+
+    .pt {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .pt .line {
+        width: 100%;
+    }
+
+}
