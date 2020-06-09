@@ -1,0 +1,118 @@
+﻿@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+html { font-size: 20px; }
+body { font-family: 'Open Sans', sans-serif; background:url(../pfimg/bg.jpg); font-size: 1rem; color: #5f5f67;}
+a { text-decoration: none; color: inherit; }
+
+
+.all { filter: blur(3px); }
+#start { width: 100%; height: 100%; text-align: center; overflow:hidden; background:rgba(255,255,255,0.6); position:fixed; top:0; left:0; z-index:99; /* display: none;  */}
+#start p.title {  position: absolute; top: 30%; left: 18.5%; letter-spacing: 5px; font-family: 'Jua', sans-serif; font-size: 3rem; color:#db847b; text-shadow: 5px 5px 5px #eaeaea; }
+#start p.sub {  position: absolute; top: 48%; left: 42%; letter-spacing: 2px; font-family: 'Ubuntu','Noto Sans KR', sans-serif;  font-size: 1.3rem; }
+#start p.startt { border-radius: 30px; width: 300px; height: 100px; margin-left: -100px; margin-top: -50px; text-align: center; line-height: 100px; position: absolute; top:60%; left: 47.5%; border: 3px solid #bb827a; background: transparent;/* background: rgb(255,225,222); */ letter-spacing: 5px; font-size: 1.2rem; font-weight: bold; }
+#start p.startt:hover { background: #bb827a; transition: all 1s }
+#start p.startt a {display: block; }
+
+
+#menu {  font-family: 'Ubuntu','Noto Sans KR', sans-serif; position:fixed; top:30%; left:0px; margin-top:-100px; z-index:99; }
+#menu a { display:block; width:200px; height:60px; font-size:20px; color:#eba6a6; text-align:right; overflow:hidden; box-sizing:border-box;  border-top:1px solid #eba6a6; opacity:0.8; transition:all 0.5s;}
+#menu li:hover a { font-size: 22px; color:#c18780; opacity:1;}
+#menu li a.on { width: 220px; font-weight: bold; font-size: 24px; color:#c18780;  opacity:1;}
+
+
+section {  background:rgba(255,255,255,0.6); font-family: 'Ubuntu','Noto Sans KR', sans-serif; height: 700px; /* border-top: 1px dashed #c18780;  */ box-sizing: border-box;  margin-left: 250px; margin-right:50px;  position:relative; background-size:cover; background-position:right center; background-attachment:fixed; overflow:hidden; }
+
+section h3 { text-align: center; font-size: 1.5rem; letter-spacing: 5px;  padding-bottom: 50px; }
+
+
+
+#main { position: relative;  text-align: center; width:70%; padding: 80px 0; margin:0 auto;}
+#main img.p { width: 70%; }
+#main img.t { width: 40%; position: absolute; bottom: 100px; left:-100px; z-index: 1}
+
+#main img.m { width: 15%;  position: absolute; bottom: 100px;right:100px; z-index: 1}
+#main img.m1 { width: 10%;  position: absolute; bottom: 100px; right: 30px; z-index: 2 }
+
+
+
+.p1 { width: 80%; padding:250px 0; margin: 0 auto; text-align: center; }
+.p1 .boxx { margin:0 auto; /* width:80%; height: 300px; background:  #f2d5d5; opacity: 0.8 */}
+.p1 p { position: relative; top: 55px; line-height: 4; letter-spacing: 2px; font-size: 0.8rem;  }
+
+
+
+.p2 { overflow: hidden; width: 90%; padding:100px 0; margin:0 auto; text-align: center; }
+.p2 p { line-height: 3; letter-spacing: 2px; font-size: 0.7rem;}
+.p2 .user1 { float: left; width: 43%; height: 350px; margin-left: 2%;} 
+.p2 .user1 img { width: 100%; height: 100%;opacity: 0.8  }
+.p2 .user2 { float: right; width: 49%; text-align: left; margin-left: 1%; }  
+.p2 .user3 { clear: both;  overflow: hidden; text-align: left; margin-left: 2%;}
+.p2 .user3 .txt { padding: 80px 0; float: left; width: 50%; }
+
+
+
+
+.c1 { width: 90%; padding:100px 0; margin: 0 auto; }
+.c1 .color { width: 80%; overflow: hidden; margin: 80px auto; overflow: hidden; }
+.c1 .color > p { float: left; width:25%; position: relative; top: -18px; }
+.c1 .color ul { float: right; width: 65%; }
+.c1 .color li { float: left;  margin-right: 10px;  }
+.c1 .color li > p { text-align: center; }
+.c1 .color .palette { width: 100px; height: 5px; }
+.c1 .color .f3bdbd {  background: #f3bdbd;}
+.c1 .color .bcc0b2 { background: #bcc0b2;}
+.c1 .color .c3d2d9 { background: #c3d2d9;}
+.c1 .color .c565656 { background: #565656;}
+.c1 .color .e13232 { background: #e13232;}
+.c1 p { line-height: 3; letter-spacing: 2px; font-size: 0.7rem;}
+.c1 .font { width: 80%; overflow: hidden; margin: 80px auto;}
+.c1 .font > p { float: left; width: 25%;  }
+.c1 .font ul { float: right;  width: 65%; font-family: 'Open Sans', sans-serif; }
+.c1 .font li { margin-bottom: 50px; }
+.c1 .Julius { font-weight: bold; font-size: 1.5rem; font-family: 'Julius Sans One', sans-serif;  }
+.c1 .Bubbler { font-size: 1.2rem; font-family: 'Bubbler One', sans-serif; }
+.c1 .Open {  font-size: 1rem; font-family: 'Open Sans', sans-serif; }
+
+
+.c2 { width: 80%; padding: 50px 0; margin: 0 auto; clear: both; position: relative; }
+.c2 p {line-height: 3; letter-spacing: 2px; font-size: 0.85rem;}
+.c2 .box .con { width: 300px; height: 300px; border-radius: 150px; position:relative; opacity: 0.8 }
+
+.c2 .box .con1 { position: absolute; top: 100px; left: 140px; background:#e3e1eb;}
+.c2 .box .con1 > h2 { position: absolute; top:43%; left: 33%; }
+.c2 .box .con1  p { width: 400px; position: absolute; top:330px; left: 20px;}
+.c2 .box .con2 { position: absolute; top: 100px; right: 140px; background:#bcaaaa;}
+.c2 .box .con2 > h2 { position: absolute; top:43%; left: 35%; }
+.c2 .box .con2  p { width: 400px; position: absolute; top:330px; left: 50px;}
+.c2 .box .con3 { position: absolute; top: 350px; right: 500px; background:#dde4e6;}
+.c2 .box .con3 > h2 { position: absolute; top:43%; left: 35%; }
+.c2 .box .con3  p { width: 400px; position: absolute; top:330px; left: 20px;}
+
+
+.c3 { clear: both; width: 70%; padding: 25px 0; margin: 0 auto; }
+.c3 p { line-height: 3; letter-spacing: 2px; font-size: 0.7rem;}
+.c3 ul {overflow: hidden; }
+.c3 ul li { width: 23%; float: left; margin-right: 20px; text-align: center;}
+.c3 ul li img { width: 100%; opacity: 0.8;}
+.c3 ul li:nth-child(4) { margin:0; }
+
+
+.d1 {width: 80%; margin: 0 auto;  padding: 30px 0;}
+.d1 p { text-align: left; letter-spacing: 2px; font-size: 0.7rem; }
+.d1 ul { width:100%; padding-bottom: 50px; margin: 0 auto; overflow: hidden;}
+.d1 ul li { width: 32%; float: left; margin-right: 10px; text-align: center; }
+.d1 ul li p { text-align: left; margin-top: 40px; line-height: 3; letter-spacing: 2px; font-size: 0.7rem; }
+.d1 ul li img {width: 100%; opacity: 0.8;}
+
+.d2 { width: 80%; padding: 10px 0; margin:0 auto; }
+.d2 p { text-align: left; letter-spacing: 2px; font-size: 0.7rem; }
+.d2 ul { width: 100%; text-align: center; overflow: hidden;}
+.d2 ul li { width: 24.2%; float: left; margin-right: 10px; text-align: center; }
+.d2 ul li p { text-align: left; margin-top: 40px; line-height: 3; letter-spacing: 2px; font-size: 0.7rem; }
+.d2 ul li img {width: 100%; opacity: 0.8;}

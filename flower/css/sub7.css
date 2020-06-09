@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+
+
+/*컨텐츠*/
+
+#content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content a {
+    color: #48484c;
+}
+
+#content .contentBox .pccontentbox {
+    display: none;
+}
+
+#content .contentBox {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#content .contentBox img {
+    width: 100%;
+}
+
+#content .contentTitle {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+#content .contentTitle h1 {
+    font-size: 1.3rem;
+    color: #565656;
+}
+
+#content .contentTitle ul {
+    overflow: hidden;
+}
+
+#content .contentTitle ul.sub1 {
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#content .contentTitle ul.sub1 li {
+    height: 3rem;
+    line-height: 3rem;
+    float: left;
+    width: 33.33%;
+    border: 1px solid #e9e9eb;
+    box-sizing: border-box;
+}
+
+#content .contentTitle ul.sub1 li {
+    border-left: 0;
+}
+
+#content .contentTitle ul.sub1 li:last-child {
+    border-right: 0;
+}
+
+#content .contentTitle ul.sub1 li a {
+    display: block;
+}
+
+#content .contentTitle ul.sub1 li a.on {
+    font-weight: bold;
+}
+
+#content .contentTitle ul.sub2 {
+    display: none;
+}
+
+#content .contentTitle .mobileselect {
+    appearance: none;
+    outline: none;
+    font-size: 1rem;
+    height: 25px;
+    width: 90%;
+    margin: 1rem auto 0;
+    padding-left: 1rem;
+}
+
+
+#content .contents {
+    width: 100%;
+    font-size: 1rem;
+}
+
+#content .contents ul {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content .contents ul li {
+    border: 1px solid #e9e9eb;
+    box-sizing: border-box;
+    width: 45%;
+    padding-bottom: 10px;
+    margin-right: 3%;
+    margin-bottom: 4%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#content .contents ul li big {
+    color: #e13232;
+}
+
+/* #content .contents ul li:nth-child(11) { visibility: hidden; }
+#content .contents ul li:nth-child(12){ visibility: hidden; } */
+#content .contents ul li a {
+    display: block;
+}
+
+#content .contents ul li img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#content .contents ul li:nth-child(2) {
+    margin-right: 0;
+}
+
+#content .contents ul li:nth-child(4) {
+    margin-right: 0;
+}
+
+#content .contents ul li:nth-child(6) {
+    margin-right: 0;
+}
+
+#content .contents ul li:nth-child(8) {
+    margin-right: 0;
+}
+
+#content .contents ul li:nth-child(10) {
+    margin-right: 0;
+}
+
+#content .contents ul li:nth-child(12) {
+    margin-right: 0;
+}
+
+#content .searchbbs {
+    margin: 1rem auto 0;
+}
+
+#content .searchbbs select {
+    text-align: center;
+    appearance: none;
+    outline: none;
+    font-size: 0.9rem;
+    height: 23px;
+    width: 70px;
+}
+
+#content .searchbbs input {
+    outline: none;
+    height: 15px;
+    width: 200px;
+    position: relative;
+    bottom: 1.3px;
+    font-size: 0.9rem;
+}
+
+#content .searchbbs button {
+    height: 23px;
+    border: 1px solid #e9e9eb;
+    margin-left: 5px;
+}
+
+
+@media screen and (min-width:640px) {
+    #content .contentTitle h1 {
+        font-size: 1.5rem;
+    }
+
+    #content .contentTitle ul.sub1 {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width:769px) {
+
+    a:hover {
+        font-weight: bold;
+    }
+
+   
+    #content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #content .contentBox .mobilecontentbox {
+        display: none;
+    }
+
+    #content .contentBox .pccontentbox {
+        display: block;
+    }
+
+    #content .contentTitle {
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+        padding: 4rem 0 2rem;
+    }
+
+    #content .contentTitle h1 {
+        font-size: 1.7rem;
+        width: 25%;
+        padding-bottom: 0.5rem;
+        margin: 0 auto;
+        border-bottom: 4px solid #e9e9eb;
+    }
+
+    #content .contentTitle ul.sub1 {
+        font-size: 1.2rem;
+        width: 300px;
+        margin: 1rem auto 4rem;
+    }
+
+    #content .contentTitle ul.sub1 li {
+        border: 0;
+    }
+
+    #content .contentTitle ul.sub2 {
+        display: block;
+        font-size: 1rem;
+        width: 360px;
+        position: absolute;
+        bottom: 8%;
+        right: 0;
+    }
+
+    #content .contentTitle ul.sub2 li {
+        float: left;
+        width: 25%;
+    }
+
+    #content .contentTitle ul.sub2 li a.on {
+        font-weight: bold;
+    }
+
+    #content .contentTitle .mobileselect {
+        display: none;
+    }
+
+    #content .contents {
+        overflow: hidden;
+    }
+
+    #content .contents ul {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #content .contents ul li {
+        width: 25%;
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(2) {
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(4) {
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(6) {
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(8) {
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(10) {
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(12) {
+        margin-right: 0;
+    }
+
+    #content .contents ul li:nth-child(3) {
+        margin-right: 0;
+    }
+
+    #content .contents ul li:nth-child(6) {
+        margin-right: 0;
+    }
+
+    #content .contents ul li:nth-child(9) {
+        margin-right: 0;
+    }
+
+    #content .searchbbs {
+        float: right;
+        margin: 2rem 5rem 2rem 0;
+    }
+
+   
+}
+
+@media screen and (min-width:960px) {
+
+   
+
+    #content .contentTitle {
+        margin: 0 auto;
+    }
+
+    #content .contentTitle ul.sub1 {
+        width: 400px;
+    }
+
+    #content .contentTitle ul.sub2 {
+        width: 350px;
+    }
+
+
+   
+
+}
+
+
+@media screen and (min-width:1440px) {
+
+
+
+    #content .contentTitle {
+        width: 70%;
+        padding: 7rem 0 6rem;
+    }
+
+    #content .contentTitle h1 {
+        font-size: 2.1rem;
+    }
+
+    #content .contentTitle ul.sub1 {
+        font-size: 1.5rem;
+        margin: 3rem auto 5rem;
+    }
+
+    #content .contents ul {
+        width: 80%;
+    }
+
+
+
+   
+}

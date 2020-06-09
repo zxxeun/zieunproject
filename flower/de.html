@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!--반응형 웹에 꼭 있어야하는 명령문-->
+		 
+		 <link rel="stylesheet" href="css/reset.css">
+		 <link rel="stylesheet" href="css/de.css">
+		 <link rel="stylesheet" href="css/modal.css">
+		 <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	
+		<script src="js/jquery-1.11.2.min.js"></script>	
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src="js/header.js"></script>		
+		<script src="js/map.js"></script>
+		<script src="js/notice.js"></script>
+		<script src="js/morebtn.js"></script>	
+		<script src="js/menu.js"></script>
+		<script src="js/content.js"></script>
+
+		
+		 <title>C Flower</title>
+		
+	</head>
+	<body>
+		<div class="modal_back"></div> 
+		
+		<header id="header">
+		<div class="top">
+				<h1><a href="index.html"><img src="img/logo1.png" alt="로고"></a></h1>
+				<button class="hamBtn"><img src="img/hamburger.gif" alt="햄버거"></button>
+				<button class="searchBtn"><img src="img/search.gif" alt="검색"></button>
+			<!--	<div class="searchArea">
+					<input type="text" placeholder="검색어를 입력해주세요.">
+					<button class="PsearchBtn"><img src="img/search.jpg" alt="검색"></button>
+				</div>-->
+			
+				<div class="left">
+					<p><strong>NOTICE</strong></p>
+					<ul id="scroll">
+					<li class="a1"><a href="sub6.html">구매 전 꼭 읽어주세요!</a></li>
+					<li class="a2"><a href="sub6.html">연휴기간 배송 지연 안내</a></li>
+					<li class="a3"><a href="sub6.html">포인트 2배 적립 이벤트</a></li>
+					</ul>	
+					<script type="text/javascript">
+var real_search_keyword = new textScroll('scroll'); 
+real_search_keyword.name = "real_search_keyword"; 
+real_search_keyword.start();
+</script>
+				</div>
+				<div class="right">
+					<ul>
+						<li><a href="sub5.html">Log In</a></li>
+						<li><a href="sub5.html">Wish List</a></li>
+						<li><a href="sub5.html">Order List</a></li>
+					</ul>
+				</div>
+			</div>
+		<nav id="navi">
+					<ul class="mainMenu">
+						<li class="pcMenu"><a href="index.html">HOME</a></li>				
+						<li class="m1"><a href="sub.html">FORM</a>
+							<ul class="subMenu">
+								<li><a href="sub.html">Bouquet</a></li>
+								<li><a href="sub2.html">Basket</a></li>
+								<li><a href="sub3.html">Vase / Box</a></li>
+							</ul>
+						</li>					
+						<li class="m1"><a href="sub9.html">FLOWER</a>
+								<ul class="subMenu">
+									 <li><a href="sub9.html">Rose</a></li>
+									 <li><a href="sub10.html">Daisy</a></li>
+									 <li><a href="sub11.html">Tulip</a></li>
+									 <li><a href="sub12.html">Lily</a></li>
+									 <li><a href="sub13.html">Plant</a></li>
+								</ul>
+						</li>						
+						<li class="m1"><a href="sub14.html">OCCASION</a>
+							<ul class="subMenu">
+								 <li><a href="sub14.html">Birthday</a></li>
+								 <li><a href="sub15.html">Celebration</a></li>
+								 <li><a href="sub16.html">Wedding</a></li>
+								 <li><a href="sub17.html">Open</a></li>
+								 <li><a href="sub18.html">Sympathy</a></li>
+								 <li><a href="sub19.html">etc.</a></li>
+							</ul>
+						</li>						
+						<li class="m1"><a href="sub4.html">CLASS</a></li>						
+						<li class="m1 pcMenu"><a href="sub6.html">COMMUNITY</a>
+							<ul class="subMenu">  
+								<li><a href="sub6.html">Notice</a></li>
+								<li><a href="sub7.html">Review</a></li>
+								<li><a href="sub8.html">CS Center</a></li>
+							</ul>
+						</li>
+					</ul>
+			</nav>	
+				
+		</header>
+		
+		<!--햄버거 검색창-->
+		<div id="hideMenu">
+			<div class="hamburger">
+				<ul class="hamMenu">
+					<li><a href="sub5.html"><img src="img/user.png" alt="user">Log In</a></li>
+					 					 
+					<li><a href="#">Form<img class="btn" src="img/menu_down.png" alt="down"></a>
+						<ul class="sub">
+						<li><a href="sub.html">Bouquet</a></li>
+						<li><a href="sub2.html">Basket</a></li>
+						<li><a href="sub3.html">Vase / Box</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#">Flower<img class="btn" src="img/menu_down.png" alt="down"> </a>
+						<ul class="sub">
+						 <li><a href="sub9.html">Rose</a></li>
+						 <li><a href="sub10.html">Daisy</a></li>
+						 <li><a href="sub11.html">Tulip</a></li>
+						 <li><a href="sub12.html">Lily</a></li>
+						 <li><a href="sub13.html">Plant</a></li>
+						</ul>
+					 </li>
+					 
+					 <li><a href="#">Occasion<img class="btn" src="img/menu_down.png" alt="down"></a>
+						<ul class="sub">
+						 <li><a href="sub14.html">Birthday</a></li>
+						 <li><a href="sub15.html">Celebration</a></li>
+						 <li><a href="sub16.html">Wedding</a></li>
+						 <li><a href="sub17.html">Open</a></li>
+						 <li><a href="sub18.html">Sympathy</a></li>
+						 <li><a href="sub19.html">etc.</a></li>
+						</ul>
+					 </li>
+					 <li><a href="sub4.html">Class</a>
+						
+					 </li>
+					  <li><a href="#">Community<img class="btn" src="img/menu_down.png" alt="down"></a>
+						<ul class="sub">  
+							<li><a href="sub6.html">Notice</a></li>
+							<li><a href="sub7.html">Review</a></li>
+							<li><a href="sub8.html">CS Center</a></li>
+						</ul>
+					 </li>
+					 
+						<ul class="cart">
+							<li><a href="sub5.html">WISH</a></li>
+							<li><a href="sub5.html">ORDER</a></li>
+						</ul>
+				
+			</ul>
+			<!--<button class="close"><img src="img/hamburger_close.png" alt="닫기"></button>-->
+			</div>
+			
+			<div class="searchBox">
+				<input type="text" placeholder="검색어를 입력해주세요.">
+				<button class="boxBtn"><img src="img/search1.png" alt="검색"></button>
+				<!--<button class="boxClose"><img src="img/search_close.png" alt="닫기"></button>-->
+			</div>
+		</div>
+		
+		<div id="content">
+			
+				<div class="contentBox">
+					<img class="mobilecontentbox" src="subimg/cimg.jpg" alt="컨텐츠이미지">
+					<img class="pccontentbox" src="subimg/pcimg.jpg" alt="컨텐츠이미지">
+				</div>
+				
+				<div class="content_detail">
+				    <div class="imgbox"><img src="img/usb010.jpg" alt="상품사진"></div>
+				    <div class="txtbox">
+				        <h3>왕왕꽃다발</h3>
+				         <ul class="detail">
+				             <li>판매가 : </li>
+				             <li>배송안내 : </li>
+				             <li>적립금 : </li>
+				             <li>상품코드 : </li>
+				             <li>배송조건 : </li>
+				         </ul>
+				    </div>
+				</div>
+				
+				
+				<div id="end">
+		<div class="information">
+			<div class="bank">	
+				<h3>BANK INFO</h3>
+					<ul> 
+						<li><strong>국민은행</strong> : 081102  04  023923</li>
+						<li><strong>신한은행</strong> : 367  11  008254</li>
+						<li><strong>농협</strong> : 100015  52  083169</li>
+						<li><strong>예금주</strong> : 조현진</li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn"><a href="#">인터넷 뱅킹 바로가기</a></button></li>
+					</ul>
+			</div>
+				
+			<div class="info">
+				<h3>ABOUT US</h3>
+					<ul class="time"> 
+						<li><strong>MON - FRI</strong> : 09 : 00 ~ 22 : 00</li>
+						<li><strong>SAT</strong> : 09 : 00 ~ 18 : 00</li>
+						<li><strong>SUN</strong> : Close</li>	
+						<li><strong>CS center</strong> : 02 3482 7001&nbsp;&nbsp;<small>그리고</small>&nbsp;&nbsp;080 740 7774</li>
+					</ul>
+					
+					<ul class="sns"> 
+						<li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+						<li><a href="#"><img src="img/instargram.png" alt="instargram"></a></li>
+						<li><a href="#"><img src="img/google.png" alt="google"></a></li>
+						<li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
+					</ul>
+			</div>	
+			
+			<div class="map">
+				<h3>LOCATION</h3>
+				<ul>
+					<li>서울특별시 영등포구 영신로17길 7-1(영등포동) 1층</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn"><a href="#">매장위치 자세히보기</a></button></li>				
+				</ul>
+				<div id="goolgeMap" style="width:90%;height:250px;"></div>
+			</div>
+		</div>
+	</div>
+
+			
+		<!--footer-->
+		
+			<footer>
+			<div class="w480w769">
+				<p>COMPANY NAME : 씨플라워&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;BUSINESS LICENSE : 114-90-52211</p>
+				<p>ONLINE SALES LICENSE : 제2011-서울영등포-0355 호</p>
+				<p>TEL : 02-3482-7001&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;FAX : 02-3476-7774</p>
+				<p>E-MAIL : cf@cflower.kr&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;OWNER : 조현진</p>
+					<br>
+				<p><small>Copyright	
+&copy;씨플라워꽃배달All Rights Reserved</small></p>					
+			</div>
+			
+			<div class="w960">
+				<p>COMPANY NAME : 씨플라워&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;BUSINESS LICENSE : 114-90-52211&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;ONLINE SALES LICENSE : 제2011-서울영등포-0355 호</p>
+				<p>TEL : 02-3482-7001FAX : 02-3476-7774&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;E-MAIL : cf@cflower.kr&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;OWNER : 조현진</p>
+					<br>
+				<p><small>Copyright	
+&copy;씨플라워꽃배달All Rights Reserved</small></p>					
+			</div>
+			</footer>
+	</body>
+	</html>

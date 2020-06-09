@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/*컨텐츠*/
+#content {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#content .loginbox1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content .loginbox1 button {
+    font-size: 0.9rem;
+}
+
+#content .loginbox1 input {
+    width: 90%;
+    margin: 20px auto;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #e9e9eb;
+    padding: 0 0 10px 20px;
+    font-size: 0.9rem;
+}
+
+#content .loginbox1 button.cflower {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #e9e9eb;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+#content .loginbox1 button.naverlog {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #e9e9eb;
+    background: #4f986d;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+#content .loginbox1 button.goolgelog {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #e9e9eb;
+    background: #b36660;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+#content .loginbox1 button.facelog {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #e9e9eb;
+    background: #57637d;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+#content .loginbox2 {
+    display: none;
+}
+
+
+@media screen and (min-width:769px) {
+    a:hover {
+        font-weight: bold;
+    }
+
+    #content {
+        width: 80%;
+        margin: 80px auto;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+
+    /* #content .contentBox { width: 120px; padding: 0 0 0.5rem; margin: 3rem auto ;  border-top: 0;border-bottom: 3px solid #e9e9eb; } */
+    #content .loginbox {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    #content .loginbox1 {
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+        height: 380px;
+        padding-right: 40px;
+        margin: 5px auto;
+    }
+
+    #content .loginbox1 > button {
+        display: none;
+    }
+
+    #content .loginbox2 {
+        border-left: 1px solid #e9e9eb;
+        box-sizing: border-box;
+        display: block;
+        float: right;
+        width: 50%;
+        height: 380px;
+        margin: 5px auto;
+        padding: 87px 0 0 20px;
+        text-align: center;
+    }
+
+    #content .loginbox2 p {
+        margin: 20px 0;
+    }
+
+    #content .loginbox2 ul {
+        margin-bottom: 40px;
+    }
+
+    #content .loginbox2 li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    #content .loginbox2 li:last-child {
+        margin-right: 0;
+    }
+
+    #content .loginbox2 button {
+        border: 1px solid #e9e9eb;
+        width: 100px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+   
+}
+
+
+@media screen and (min-width:1440px) {
+    #content {
+        width: 55%;
+        margin: 150px auto;
+        text-align: center;
+    }
+
+    /* #content .contentBox { margin: 0 auto 7rem;}
+/* #content .contentBox h1 { font-size: 22px;} */
+
+}

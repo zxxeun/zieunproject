@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+
+/*컨텐츠*/
+#content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content .contentBox {
+    width: 100%;
+    padding: 4rem 0;
+    margin: 1rem 0;
+    border-bottom: 4px double #e9e9eb;
+    border-top: 4px double #e9e9eb;
+}
+
+#content .contentBox h1 {
+    color: #565656;
+    font-size: 16px;
+}
+
+#content small {
+    color: #e13232;
+}
+
+#content .contents .contentsimg {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#content .contents .contentsimg img {
+    width: 100%;
+}
+
+#content .contents {
+    width: 100%;
+    font-size: 1rem;
+}
+
+#content .contents ul {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content .contents ul li {
+    width: 47%;
+    margin-right: 3%;
+    margin-bottom: 4%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 5px;
+    border: 1px solid #e9e9eb;
+    box-sizing: border-box;
+}
+
+#content .contents ul li a {
+    display: block;
+}
+
+#content .contents ul li img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#content .contents ul li:nth-child(2) {
+    margin-right: 0;
+}
+
+#content .contents ul li:nth-child(4) {
+    margin-right: 0;
+}
+
+#content .contents ul li:nth-child(6) {
+    margin-right: 0;
+}
+
+#content .contents ul li:nth-child(8) {
+    margin-right: 0;
+}
+
+/* #content .contents ul li:nth-child(10) { margin-right: 0;}
+#content .contents ul li:nth-child(12) { margin-right: 0;} */
+#content .contents div.box {
+    display: none;
+}
+
+#content .contents .contentsimg map area {
+    outline: none;
+}
+
+
+
+@media screen and (min-width:769px) {
+    a:hover {
+        font-weight: bold;
+    }
+
+    #content {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #content .contentBox {
+        width: 30%;
+        padding: 0 0 0.5rem;
+        margin: 6rem auto;
+        border-top: 0;
+        border-bottom: 3px solid #e9e9eb;
+    }
+
+    /* #content .contents .contentsimg { width: 90%; margin: 0 auto;}
+#content .contents .contentsimg img { width: 100%; } */
+
+    #content .contents ul li {
+        width: 30%;
+    }
+
+    #content .contents ul li:nth-child(2) {
+        margin-right: 3%;
+    }
+
+    #content .contents ul li:nth-child(3) {
+        margin-right: 0;
+    }
+
+    #content .contents ul li:nth-child(4) {
+        margin-right: 3%;
+    }
+
+    #content .contents ul li:nth-child(6) {
+        margin-right: 0;
+    }
+
+    #content .contents ul li:nth-child(8) {
+        margin-right: 3%;
+    }
+
+    #content .contents ul li:nth-child(6) {
+        margin-right: 0;
+    }
+
+    #content .contents ul li:nth-child(10) {
+        margin-right: 3%;
+    }
+
+    #content .contents ul li:nth-child(12) {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (min-width:960px) {
+
+  
+    #content .contentBox h1 {
+        font-size: 20px;
+    }
+
+
+  
+
+}
+
+
+@media screen and (min-width:1440px) {
+
+
+
+    #content {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #content .contentBox {
+        width: 40%;
+        padding: 0 0 0.5rem;
+        margin: 8rem auto;
+        border-top: 0;
+        border-bottom: 3px solid #e9e9eb;
+    }
+
+    #content .contentBox h1 {
+        font-size: 22px;
+    }
+
+    #content .contents .contentsimg {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #content .contents .contentsimg img {
+        width: 100%;
+    }
+
+    #content .contents {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+
+    #content .contents ul {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #content .contents ul li {
+        width: 20%;
+    }
+
+    #content .contents ul li:hover div {
+        display: block;
+    }
+
+    #content .contents ul li:nth-child(2) {
+        margin-right: 3%;
+    }
+
+    #content .contents ul li:nth-child(3) {
+        margin-right: 3%;
+    }
+
+    #content .contents ul li:nth-child(4) {
+        margin-right: 0;
+    }
+
+    #content .contents ul li:nth-child(6) {
+        margin-right: 3%;
+    }
+
+    #content .contents ul li:nth-child(8) {
+        margin-right: 0;
+    }
+
+    #content .contents .content li {
+        position: relative;
+    }
+
+    #content .contents .content li a:hover > .box {
+        display: block;
+    }
+
+    #content .contents .content li .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+
+
+}

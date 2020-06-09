@@ -1,0 +1,108 @@
+﻿@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
+
+html { font-size: 20px; }
+body { font-family: 'Open Sans', sans-serif; background: #fff9f9; font-size: 1rem; color: #5f5f67;}
+a { text-decoration: none; color: inherit; }
+
+
+
+#start { width: 100%; height: 100%; background-size: cover; background-position:center center; background-attachment: fixed; overflow:hidden; background:rgba(255,255,255,0.9); position: absolute; top:0; left:0; z-index:99;/*  display: none; */ }
+#start p { width: 200px; height: 100px; margin-left: -100px; margin-top: -50px; text-align: center; line-height: 100px; position: absolute; top: 50%; left: 50%;background: rgb(255,225,222); }
+#start p:hover { background: #bb827a; transition: all 0.5s }
+#start p a {display: block; }
+
+#menu {  font-family: 'Ubuntu', sans-serif; position:fixed; top:50%; left:0px; margin-top:-100px; z-index:13;}
+#menu a { display:block; width:200px; height:60px; font-size:20px; color:#eba6a6; text-align:right; overflow:hidden; box-sizing:border-box;  border-top:1px solid #eba6a6; opacity:0.8; transition:all 0.5s;}
+#menu li:hover a { font-size: 22px; color:#c18780; opacity:1;}
+#menu li a.on { font-size: 22px; color:#c18780;  opacity:1;}
+
+
+section { margin-left: 15%; width: 85%; }
+section > div { width: 100%; width:100%; position:relative; background-size:cover; background-position:right center; background-attachment:fixed; overflow:hidden;/* border: 1px solid red; */}
+
+section h3 { text-align: center; font-size: 1.5rem; letter-spacing: 5px;  padding-bottom: 50px; }
+#main { position: relative;  text-align: center; width:70%; margin:100px auto;/*  border:1px solid red;  */}
+#main img.p { width: 70%;  /* position: absolute; top: 130px; right: 50px; z-index: 2; opacity: 0.9; */ }
+#main img.t { width: 40%; position: absolute; bottom: -10px; left:-30px; z-index: 1}
+
+#main img.m { width: 15%;  position: absolute; bottom: 5px;right:130px; z-index: 1}
+#main img.m1 { width: 10%;  position: absolute; bottom: 5px; right: 60px; z-index: 2 }
+
+
+
+#project > div { padding: 270px 0; }
+
+#project .p1 { text-align: center; }
+#project .p1 p { line-height: 5; letter-spacing: 2px; font-size: 0.7rem;  }
+#project .p2 { overflow: hidden; }
+
+#project .p2 .user1 { float: left; width: 45%; padding: 0 2.5%; }
+#project .p2 .user1 img { width: 100%; }
+#project .p2 .user2 { float: right; width: 50%; }  
+#project .p2 p { line-height: 3; letter-spacing: 2px; font-size: 0.7rem;}
+#project .p2 p.under { border-bottom: 3px solid #bb827a; width: 100px;}
+#project .p2 .user3 { clear: both; padding:1.5% 2.5%; overflow: hidden;}
+#project .p2 .user3 .txt { float: left; width: 50%; }
+
+
+#concept > div { padding: 130px 0; }
+#concept .c1 { width: 60%; margin: 0 auto; }
+#concept .c1 .color { overflow: hidden; margin: 80px 0; overflow: hidden; }
+
+#concept .c1 .color > p { float: left; width:35%; position: relative; top: -15px; }
+#concept .c1 .color ul { float: right; width: 65%; }
+#concept .c1 .color li { float: left;  margin-right: 20px;  }
+#concept .c1 .color li > p { text-align: center; }
+#concept .c1 .color .palette  { width: 100px; height: 10px; text-align: center; }
+#concept .c1 .color .f3bdbd {  background: #f3bdbd;}
+#concept .c1 .color .bcc0b2 { background: #bcc0b2;}
+#concept .c1 .color .c3d2d9 { background: #c3d2d9;}
+#concept .c1 .color .c565656 { background: #565656;}
+#concept .c1 .color .e13232 { background: #e13232;}
+#concept .c1 p { line-height: 3; letter-spacing: 2px; font-size: 0.7rem;}
+
+
+#concept .c1 .font > p { float: left; width: 35%; /* border: 1px solid red; box-sizing: border-box; */ }
+#concept .c1 .font ul { float: right;  width: 65%; font-family: 'Open Sans', sans-serif;/* border: 1px solid red; box-sizing: border-box; */ }
+#concept .c1 .font li { margin-bottom: 50px; }
+#concept .c1 .Julius { font-weight: bold; font-size: 1.5rem; font-family: 'Julius Sans One', sans-serif;  }
+#concept .c1 .Bubbler { font-size: 1.2rem; font-family: 'Bubbler One', sans-serif; }
+#concept .c1 .Open {  font-size: 1rem; font-family: 'Open Sans', sans-serif; }
+
+#concept .c2 { clear: both; position: relative; }
+#concept .c2 h2{ font-size: 2.5rem; opacity: 0.1}
+#concept .c2 h2:nth-child(1) {position: absolute; top:38%; left:24%;  }
+#concept .c2 h2:nth-child(2) {position: absolute; top:37%; right:24%;  }
+#concept .c2 h2:nth-child(3) {position: absolute; bottom:25%; left:21%;  }
+#concept .c2 h2:nth-child(4) {position: absolute; bottom:25%; right:26%;  }
+#concept .box ul { width: 75%; margin: 0 auto; overflow: hidden; }
+#concept .box > ul > li { padding: 40px 0; float: left; width: 50%; height: 200px; } 
+#concept .box ul li { line-height: 3; /* letter-spacing: 1px; */ font-size: 0.7rem;}
+#concept .box > ul > li:nth-child(1)  {background: #ffefef; }
+#concept .box > ul > li:nth-child(2)  {background: #f6eeee; }
+#concept .box > ul > li:nth-child(3)  { background: #f6eeee; }
+#concept .box > ul > li:nth-child(4)  { background: #ffefef; }
+
+#concept .c3 p { line-height: 3; letter-spacing: 2px; font-size: 0.7rem;}
+#concept .c3 { clear: both; width: 70%; margin: 0 auto; }
+#concept .c3 ul {overflow: hidden; }
+#concept .c3 ul li { width: 45%; float: left; margin-right: 20px; text-align: center;}
+#concept .c3 ul li:nth-child(2) img { width: 55%; }
+#concept .c3 ul li:nth-child(2) { margin:0; }
+
+#design > div { padding: 80px 0; }
+#design .d1 { width: 80%; margin: 0 auto;  }
+#design .d1 ul { width:100%;margin: 0 auto; }
+#design .d1 ul li p { text-align: left; margin-top: 40px; line-height: 3; letter-spacing: 2px; font-size: 0.7rem; }
+#design .d1 ul li img { width: 100%; opacity: 0.8;}
+
+#design .d2 { width: 80%; margin:0 auto; }
+#design .d2 ul { width: 100%; text-align: center; overflow: hidden;}
+#design .d2 ul li { width: 45%; margin-right: 5%; float: left;  }
+#design .d2 ul li:last-child { margin-right:0;}
+#design .d2 ul li p {margin-top: 40px; line-height: 3; letter-spacing: 2px; font-size: 0.7rem; }
+#design .d2 ul li img { width: 100%; opacity: 0.8; }

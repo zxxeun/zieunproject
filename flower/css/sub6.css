@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+
+
+/*컨텐츠*/
+
+#content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content .contentTitle {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+#content .contentTitle h1 {
+    font-size: 1.3rem;
+    color: #565656;
+}
+
+#content .contentTitle ul {
+    overflow: hidden;
+}
+
+#content .contentTitle ul.sub1 {
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#content .contentTitle ul.sub1 li {
+    height: 3rem;
+    line-height: 3rem;
+    float: left;
+    width: 33.33%;
+    border: 1px solid #e9e9eb;
+    box-sizing: border-box;
+}
+
+#content .contentTitle ul.sub1 li {
+    border-left: 0;
+}
+
+#content .contentTitle ul.sub1 li:last-child {
+    border-right: 0;
+}
+
+#content .contentTitle ul.sub1 li a {
+    display: block;
+}
+
+#content .contentTitle ul.sub1 li a.on {
+    font-weight: bold;
+}
+
+#content .contents {
+    width: 98%;
+    margin: 1rem auto 0;
+}
+
+#content .contents ul {
+    font-size: 0.9rem;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+}
+
+#content .contents ul li {
+    float: left;
+}
+
+#content .contents ul:first-child {
+    height: 30px;
+    line-height: 30px;
+}
+
+#content .contents ul li:nth-child(1) {
+    width: 8%;
+}
+
+#content .contents ul li:nth-child(2) {
+    text-align: left;
+    text-indent: 20px;
+    width: 55%;
+}
+
+#content .contents ul:first-child li {
+    font-weight: bold;
+    text-align: center;
+    text-indent: 0;
+}
+
+#content .contents ul li:nth-child(3) {
+    width: 18.5%;
+}
+
+#content .contents ul li:nth-child(4) {
+    width: 18.5%;
+}
+
+#content .contents ul li {
+    background: #fbfbfb;
+    border-bottom: 1px solid #fff;
+}
+
+#content .contents ul .important {
+    font-weight: bold;
+    background: #f4f4f4;
+    border-bottom: 1px solid #fff;
+}
+
+
+#content .contents select {
+    text-align: center;
+    appearance: none;
+    outline: none;
+    font-size: 0.9rem;
+    height: 23px;
+    width: 70px
+}
+
+#content .contents input {
+    outline: none;
+    height: 15px;
+    width: 200px;
+    position: relative;
+    bottom: 1.3px;
+    font-size: 0.9rem;
+}
+
+#content .contents button {
+    height: 23px;
+    border: 1px solid #e9e9eb;
+    margin-left: 5px;
+}
+
+#content .searchbbs {
+    margin: 2rem auto;
+}
+
+@media screen and (min-width:640px) {
+    #content .contentTitle h1 {
+        font-size: 1.5rem;
+    }
+
+    #content .contentTitle ul.sub1 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:769px) {
+
+    a:hover {
+        font-weight: bold;
+    }
+  
+
+    #content .contentTitle {
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+        padding: 4rem 0 2rem;
+    }
+
+    #content .contentTitle h1 {
+        font-size: 1.7rem;
+        width: 25%;
+        padding-bottom: 0.5rem;
+        margin: 0 auto;
+        border-bottom: 4px solid #e9e9eb;
+    }
+
+    #content .contentTitle ul.sub1 {
+        font-size: 1.2rem;
+        width: 300px;
+        margin: 1rem auto 4rem;
+    }
+
+    #content .contentTitle ul.sub1 li {
+        border: 0;
+    }
+
+    #content .contents {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #content .searchbbs {
+        float: right;
+        margin: 2rem 1rem 2rem 0;
+    }
+
+}
+
+@media screen and (min-width:960px) {
+
+   
+    #content .contentTitle {
+        margin: 0 auto;
+    }
+
+    #content .contentTitle ul.sub1 {
+        width: 400px;
+    }
+
+}
+
+
+@media screen and (min-width:1440px) {
+    #content .contentTitle {
+        width: 70%;
+        padding: 7rem 0 6rem;
+    }
+
+    #content .contentTitle h1 {
+        font-size: 2.1rem;
+    }
+
+    #content .contentTitle ul.sub1 {
+        font-size: 1.5rem;
+        margin: 3rem auto 0;
+    }
+
+    #content .contents {
+        width: 50%;
+    }
+
+  
+}

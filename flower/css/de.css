@@ -1,0 +1,982 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+body {
+    color: #46464c;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+/*헤더*/
+html {
+    font-size: 12px
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+button img {
+    width: 100%;
+}
+
+
+
+#header {
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #d0d0d0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 9998;
+    box-shadow: 0 2px 10px -1px rgba(70, 70, 76, 0.8);
+    background: linear-gradient(to bottom, rgba(255, 255, 255), rgba(255, 255, 255, 0.9));
+}
+
+#header .top {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 4% 0;
+}
+
+#header .top h1 {
+    width: 35%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#header .top h1 img {
+    width: 100%;
+}
+
+#header .top h1 a {
+    display: block;
+}
+
+#header .top .hamBtn {
+    position: absolute;
+    top: 3%;
+    left: 10px;
+    width: 15%;
+}
+
+#header .top .searchBtn {
+    position: absolute;
+    top: 3%;
+    right: 10px;
+    width: 15%;
+}
+
+.searchArea,
+.left,
+.right,
+.pcMenu {
+    display: none;
+}
+
+#navi {
+    font-family: 'Bubbler One', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+#navi .mainMenu {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    border-top: 1px solid #e9e9eb;
+    border-bottom: 1px solid #e9e9eb;
+    font-size: 1rem;
+}
+
+#navi .mainMenu li a {
+    display: block;
+}
+
+#navi .mainMenu > li {
+    float: left;
+    width: 25%;
+    border-right: 1px solid #e9e9eb;
+    box-sizing: border-box;
+}
+
+#navi .mainMenu > li:nth-child(5) {
+    border-right: 0;
+}
+
+#navi .subMenu {
+    display: none;
+}
+
+#hideMenu .hamburger {
+    font-family: 'Open Sans', sans-serif;
+    width: 200px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    border-right: 1px solid rgba(214, 180, 178, 0.2);
+    box-shadow: 0 2px 10px -1px rgba(214, 180, 178, 0.5);
+    left: -204px;
+}
+
+#hideMenu .hamburger .hamMenu {
+    height: 100%;
+}
+
+#hideMenu .hamburger .hamMenu > li {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0;
+    border-bottom: 1px solid rgba(214, 180, 178, 0.2);
+    font-size: 16px;
+    text-indent: 30px;
+    position: relative;
+}
+
+#hideMenu .hamburger .hamMenu > li img {
+    position: absolute;
+    top: 28px;
+    right: 10px;
+}
+
+#hideMenu .hamburger .hamMenu > li:nth-child(1) {
+    text-indent: 38px;
+    border-bottom: 3px solid rgba(214, 180, 178, 0.2);
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#hideMenu .hamburger .hamMenu > li:nth-child(1) img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30px;
+    margin-right: 15px
+}
+
+#hideMenu .hamburger .hamMenu > li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#hideMenu .hamburger .hamMenu > li a {
+    display: block;
+}
+
+#hideMenu .hamburger .hamMenu ul.cart {
+    background: rgba(214, 180, 178, 0.2);
+    margin-top: 10px;
+    width: 200px;
+    font-size: 1em;
+    overflow: hidden;
+    text-align: center;
+}
+
+#hideMenu .hamburger .hamMenu ul.cart li {
+    float: left;
+    width: 98px;
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+#hideMenu .hamburger .hamMenu ul.cart li:last-child {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+}
+
+#hideMenu .hamburger .hamMenu .sub {
+    font-size: 12px;
+    display: none;
+}
+
+#hideMenu .hamburger .hamMenu .sub > li {
+    text-indent: 80px;
+    margin-top: 5px;
+}
+
+#hideMenu .hamburger .hamMenu .sub > li a {
+    display: block;
+}
+
+
+/* #hideMenu .hamburger button.close { outline: none; background:transparent; border:none; position:absolute; top:17px; right:5px; cursor:pointer;}
+ */
+
+#hideMenu .searchBox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -100%;
+    width: 100%;
+    height: 70px;
+    z-index: 99999;
+    background: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(214, 180, 178, 0.2);
+    box-shadow: 0 2px 3px -1px rgba(214, 180, 178, 0.5);
+    /*border:1px solid red; */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#hideMenu .searchBox > input {
+    width: 250px;
+    height: 40%;
+    margin: 1.8rem 0.5rem;
+    border: 2px solid #efa6aa;
+    background: rgba(255, 255, 255, 0.9);
+    text-indent: 15px;
+    outline: none;
+    color: #93939b;
+}
+
+#hideMenu .searchBox .boxBtn {
+    width: 50px;
+    position: relative;
+    top: 10px;
+}
+
+/* #hideMenu .searchBox .boxClose { width: 35px; position:relative; top: 8px;} */
+
+
+/*컨텐츠*/
+#content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content a {
+    color: #48484c;
+}
+
+#content .contentBox .pccontentbox {
+    display: none;
+}
+
+#content .contentBox {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#content .contentBox img {
+    width: 100%;
+}
+
+
+
+
+#end .bank,
+#end .map {
+    display: none;
+}
+
+#end {
+    width: 100%;
+    padding: 2rem 0;
+    margin: 2rem auto;
+    background: url(../img/searchbar_bg.jpg);
+    box-sizing: border-box;
+}
+
+#end button.btn {
+    width: 160px;
+    height: 40px;
+    border: 1px solid #93939b;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    top: 2px;
+}
+
+#end button.btn a {
+    display: block;
+    color: #93939b;
+}
+
+#end h3 {
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 1.8rem;
+    margin: 0.2em 0 0.5em 0;
+    padding: 0;
+    text-align: center;
+}
+
+#end ul {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#end li {
+    display: inline-block;
+}
+
+#end .info .sns {
+    margin-top: 1em;
+}
+
+#end .info .sns li {
+    display: inline-block;
+    width: 40px;
+    padding: 0;
+    margin-right: 0.8em;
+}
+
+#end .info .sns li a {
+    display: block;
+}
+
+#end .info .sns li img {
+    width: 100%;
+}
+
+
+/*푸터*/
+footer {
+    width: 100%;
+    padding: 0;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer .w960 {
+    display: none;
+}
+
+
+
+
+@media screen and (min-width:640px) {
+    #header .top .hamBtn {
+        left: 3%;
+        width: 13%;
+    }
+
+    #header .top .searchBtn {
+        right: 3%;
+        width: 13%;
+    }
+
+    #navi .mainMenu {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 auto;
+        border-top: 1px solid #e9e9eb;
+        border-bottom: 1px solid #e9e9eb;
+        font-size: 1.3rem;
+    }
+
+    #content .contentTitle h1 {
+        font-size: 1.5rem;
+    }
+
+    #content .contentTitle ul.sub1 {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width:769px) {
+
+    a:hover {
+        font-weight: bold;
+    }
+
+    #header .hamBtn,
+    .searchBtn {
+        display: none;
+    }
+
+    #header .searchArea,
+    .left,
+    .right {
+        display: block;
+    }
+
+    #header .top {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #header .left {
+        box-sizing: border-box;
+        width: 20%;
+        position: absolute;
+        top: 30%;
+        left: 30px;
+    }
+
+    #header .left ul li {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #header .left ul li a {
+        display: block;
+    }
+
+    #header .left ul li:hover a {
+        color: #8d5850;
+    }
+
+    #header .left #scroll {
+        height: 30px;
+        margin: 1em 0;
+    }
+
+    #header .right {
+        box-sizing: border-box;
+        width: 20%;
+        position: absolute;
+        top: 23%;
+        right: 30px;
+    }
+
+    #header .right li {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    #header .right ul li a {
+        display: block;
+    }
+
+    #header .right ul li:hover a {
+        color: #8d5850;
+    }
+
+    #header .searchArea {
+        width: 50%;
+        margin: 3rem auto;
+    }
+
+    #header .searchArea input {
+        width: 60%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #93939b;
+        text-align: center;
+        outline: none;
+        font-size: 0.9rem;
+        padding: 5px 0;
+    }
+
+    #header .searchArea button {
+        width: 8%;
+    }
+
+    #header .searchArea button img {
+        width: 100%;
+    }
+
+    #navi {
+        width: 100%;
+        margin: 2rem 0 0;
+        border-bottom: 4px double #d0d0d0;
+    }
+
+    #navi .pcMenu {
+        display: block;
+    }
+
+    #navi .mainMenu {
+        margin: 0 auto;
+        width: 90%;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 4px double #d0d0d0;
+        font-size: 1.5rem;
+        border: none;
+    }
+
+    #navi .mainMenu > li {
+        width: 16.66%;
+        position: relative;
+        border: none;
+    }
+
+    #navi .mainMenu li a {
+        display: block;
+    }
+
+    #navi .mainMenu > li:hover > a {
+        font-size: 20px;
+        font-weight: bold;
+        transition: all 1s;
+    }
+
+    #navi .subMenu {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        border-bottom: 2px solid #93939b;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        z-index: 9999;
+    }
+
+    #content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #content .contentBox .mobilecontentbox {
+        display: none;
+    }
+
+    #content .contentBox .pccontentbox {
+        display: block;
+    }
+
+    #content .contentTitle {
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+        padding: 4rem 0 2rem;
+    }
+
+    #content .contentTitle h1 {
+        font-size: 1.7rem;
+        width: 20%;
+        padding-bottom: 0.5rem;
+        margin: 0 auto;
+        border-bottom: 4px solid #e9e9eb;
+    }
+
+    #content .contentTitle ul.sub1 {
+        font-size: 1.2rem;
+        width: 300px;
+        margin: 1rem auto 4rem;
+    }
+
+    #content .contentTitle ul.sub1 li {
+        border: 0;
+    }
+
+    #content .contentTitle ul.sub2 {
+        display: block;
+        font-size: 1.1rem;
+        width: 300px;
+        position: absolute;
+        bottom: 8%;
+        right: 0;
+    }
+
+    #content .contentTitle ul.sub2 li {
+        float: left;
+        width: 25%;
+    }
+
+    #content .contentTitle ul.sub2 li a.on {
+        font-weight: bold;
+    }
+
+    #content .contentTitle .mobileselect {
+        display: none;
+    }
+
+    #content .contents {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #content .contents ul {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #content .contents ul li {
+        width: 25%;
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(2) {
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(3) {
+        margin-right: 0%;
+    }
+
+    #content .contents ul li:nth-child(4) {
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(6) {
+        margin-right: 0%;
+    }
+
+    #content .contents ul li:nth-child(8) {
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(9) {
+        margin-right: 0%;
+    }
+
+    #content .contents ul li:nth-child(10) {
+        margin-right: 5%;
+    }
+
+    #content .contents ul li:nth-child(12) {
+        margin-right: 0%;
+    }
+
+
+    #content .contents .content li {
+        position: relative;
+    }
+
+    #content .contents .content li a:hover > .box {
+        display: block;
+    }
+
+    #content .contents .content li .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    #content .moreBox button:hover,
+    #content .moreBox2 button:hover {
+        background: #f8e8e7;
+        font-weight: bold;
+    }
+
+    #end .bank,
+    #end .map {
+        display: block;
+    }
+
+    #end {
+        padding: 3em 0;
+        margin: 2em auto;
+    }
+
+    #end .information {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #end h3 {
+        font-size: 2em;
+        text-indent: 1em;
+        box-sizing: border-box;
+        text-align: left;
+        margin: 0;
+    }
+
+    #end .information > div {
+        margin-bottom: 2em;
+        /* border: 1px solid red; */
+    }
+
+    #end .information > div:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    #end ul {
+        text-align: left;
+    }
+
+    #end li {
+        font-size: 0.9rem;
+    }
+
+    #end li:first-child {
+        padding-left: 2.5em;
+    }
+
+    #end .info {
+        overflow: hidden;
+    }
+
+    #end .info .time {
+        float: left;
+    }
+
+    #end .info .sns {
+        float: left;
+        position: relative;
+        margin-top: 0;
+        bottom: 2px;
+        text-indent: 1em;
+    }
+
+    #end .info .sns li {
+        width: 20px;
+        margin-right: 0.5em;
+    }
+
+    #end .info .sns li:last-child {
+        margin-right: 0;
+    }
+
+    #goolgeMap {
+        display: none;
+    }
+}
+
+@media screen and (min-width:960px) {
+
+    #header .top h1 {
+        width: 40%;
+    }
+
+    #content .contentTitle {
+        margin: 0 auto;
+    }
+
+    #content .contentTitle ul.sub1 {
+        width: 400px;
+    }
+
+    #content .contentTitle ul.sub2 {
+        width: 330px;
+    }
+
+    #end li {
+        display: inline-block;
+        font-size: 0.9em;
+    }
+
+    #end .info .sns {
+        bottom: 4px;
+    }
+
+    #end .info .sns li {
+        margin-right: 1rem;
+    }
+
+    #end .info .sns li img {
+        width: 100%;
+    }
+
+    footer .w480w769 {
+        display: none;
+    }
+
+    footer .w960 {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+
+    #header .top {
+        width: 70%;
+        margin: 2% auto;
+    }
+
+    #header .top h1 {
+        width: 30%;
+    }
+
+    #header .left {
+        overflow: hidden;
+        top: 30%;
+    }
+
+    #header .left p {
+        width: 30%;
+        float: left;
+        position: relative;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #header .left #scroll {
+        width: 70%;
+        float: right;
+        margin: 0;
+    }
+
+    #header .left ul li {
+        width: 100%;
+    }
+
+    #header .right {
+        position: absolute;
+        top: 30%;
+        right: 0;
+    }
+
+    #header .right ul {
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+    }
+
+    #header .right ul li {
+        width: 30%;
+        float: left;
+        margin-right: 5px;
+    }
+
+    #header .right ul li:last-child {
+        margin-right: 0;
+    }
+
+    #header .searchArea button {
+        width: 5%;
+    }
+
+    #navi {
+        width: 100%;
+        height: 50px;
+        border-bottom: 4px double #d0d0d0;
+    }
+
+    #navi .pcMenu {
+        display: block;
+    }
+
+    #navi .mainMenu {
+        width: 70% !important;
+        border: none;
+    }
+
+    #navi .mainMenu > li {
+        width: 16.66%;
+        position: relative;
+        border: none;
+    }
+
+    #content .contentTitle {
+        width: 70%;
+        padding: 7rem 0 6rem;
+    }
+
+    #content .contentTitle h1 {
+        font-size: 2.1rem;
+    }
+
+    #content .contentTitle ul.sub1 {
+        font-size: 1.5rem;
+        margin: 3rem auto 5rem;
+    }
+
+    #content .contents {
+        width: 80%;
+    }
+
+
+    #end .bank,
+    #end .map {
+        display: block;
+    }
+
+    #end {
+        width: 100%;
+        padding: 3em 0;
+        margin: 2em auto;
+        background: url(../img/searchbar_bg.jpg);
+        box-sizing: border-box;
+    }
+
+    #end button.btn {
+        margin-top: 1em;
+    }
+
+    #end .information {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #end h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-indent: 1.5rem;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    #end .information div {
+        width: 33%;
+        float: left;
+    }
+
+    #end .information div:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    #end ul {
+        text-align: left;
+        width: 100%;
+    }
+
+    #end li {
+        display: block;
+        font-size: 1rem;
+        padding: 0 0 1em 3em;
+    }
+
+    #end li:first-child {
+        padding-left: 3em;
+    }
+
+    #end .map ul {
+        display: none;
+    }
+
+    #end .bank button {
+        width: 60%;
+        height: 50px;
+    }
+
+
+    #end .info .sns {
+        text-indent: 1.5em;
+        margin-top: 2rem;
+    }
+
+    #end .info .sns li {
+        width: 40px;
+    }
+
+    #goolgeMap {
+        display: block;
+        width: 80%;
+        margin-left: 4em;
+    }
+}
